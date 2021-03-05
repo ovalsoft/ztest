@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Zoho CRM API Test</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -81,11 +81,28 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Zoho CRM API Test
                 </div>
+				
+				
+				<form action="/zoho/submit" method="post">
+					@csrf
+					<div class="form-group">
+						<label for="deal">Deal</label>
+						<input type="text" name="deal" placeholder="Deal name" id="deal" class="form-control">
+					</div>	
+					<div class="form-group">
+						<label for="task">Task</label>
+						<input type="text" name="task" placeholder="Task name" id="task" class="form-control">						
+					</div>	
+					<br>
+					<button type="sumbit">CREATE DEAL AND TASK</button>
+				</form>			
+				
 
                 <div class="links">
-                    <a href="zoho">Zoho</a>
+					<!--
+                    <a href="zoho">Create Deal and Task</a>
                     <a href="https://laravel.com/docs">Docs</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
@@ -93,6 +110,7 @@
                     <a href="https://nova.laravel.com">Nova</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
+					-->
                 </div>
             </div>
         </div>

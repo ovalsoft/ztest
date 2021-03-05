@@ -16,4 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('/zoho', 'ZohoController@deal');
+Route::post('/zoho/submit', 'ZohoController@deal');
 
